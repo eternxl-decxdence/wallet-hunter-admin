@@ -1,0 +1,111 @@
+.dialog-overlay {
+  top: 0;
+  left: 0;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0005;
+}
+.update-dialog-container {
+  position: relative;
+  width: 400px;
+  background: white;
+  border: 2px solid #789cef;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 14px;
+  color: #01110a;
+  font-weight: 400;
+
+  box-shadow: 0 4px 4px 0 #0005;
+  .label {
+    margin: 0;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    padding: 2px 24px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #798cef;
+
+    background: white;
+
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .update-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 36px 48px 12px 48px;
+
+    .update-form-input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+
+      border: 1px solid #798cef;
+      border-radius: 16px;
+
+      background: #01110aa5;
+
+      font-family: "Montserrat", sans-serif;
+      line-height: 14px;
+      font-size: 12px;
+      font-weight: 400;
+
+      transition: all 100ms ease-in-out;
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        border: 1px solid #5f7aff;
+      }
+      &::placeholder {
+        color: rgba(255, 255, 255 / 0.8);
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    .update-form-button {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+
+      border: 1px solid #798cef;
+      border-radius: 16px;
+
+      background: #798cef;
+
+      font-family: "Montserrat", sans-serif;
+      line-height: 14px;
+      font-size: 12px;
+      font-weight: 500;
+
+      transition: all 100ms ease-in-out;
+      &:hover {
+        background: #5f7aff;
+      }
+    }
+  }
+}

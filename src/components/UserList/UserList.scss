@@ -1,0 +1,154 @@
+.user-list-container {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 600px;
+
+  background: white;
+
+  border: 2px solid #798cef;
+
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #01110a;
+
+  .label {
+    z-index: 100;
+    margin: 0;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    padding: 2px 24px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #798cef;
+
+    background: white;
+
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .create {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -2px;
+    left: 120px;
+    padding: 2px 24px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #798cef;
+
+    background: white;
+
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    color: #01110a;
+
+    transition: 200ms all ease-in;
+    &:hover {
+      background: #798cef;
+      color: white;
+    }
+  }
+  .users-wrapper {
+    width: 100%;
+    padding: 24px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    .users-header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+
+      padding: 12px 8px;
+      gap: 12px;
+
+      border-bottom: 1px solid #01110a;
+
+      .table-separator {
+        padding: 0;
+        margin: 0;
+
+        height: 100%;
+        border: none;
+        border-right: 1px solid #01110a;
+      }
+      .username {
+        width: 150px;
+      }
+      .servers-count {
+        width: 150px;
+      }
+      .found-count {
+        width: 120px;
+      }
+      .subscription {
+        width: 120px;
+      }
+    }
+    .user-row {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+
+      padding: 12px 8px;
+      gap: 12px;
+
+      border-bottom: 1px solid #01110a;
+
+      .table-separator {
+        padding: 0;
+        margin: 0;
+
+        height: 100%;
+        border: none;
+        border-right: 1px solid #01110a;
+      }
+      .username {
+        width: 150px;
+      }
+      .servers-count {
+        width: 150px;
+      }
+      .found-count {
+        width: 120px;
+      }
+      .subscription {
+        width: 120px;
+      }
+
+      &:hover {
+        border-bottom: 1px solid #798cef;
+        .table-separator {
+          border-right: 1px solid #798cef;
+        }
+      }
+    }
+  }
+}
