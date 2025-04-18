@@ -60,19 +60,16 @@ export default function MainPage() {
   async function refreshUserData() {
     const userData = await api.get<User[]>("/admin/user/list");
     setUsers(userData.data);
-    console.log(users);
   }
 
   async function refreshAdminData() {
     const userData = await api.get<Admin>("/admin/getUser");
     setAdmin(userData.data);
-    console.log(admin);
   }
   async function refreshAdminList() {
     if (admin?.role === "admin") return;
     const userData = await api.get<Admin[]>("/admin/list");
     setAdminList(userData.data);
-    console.log(adminList);
   }
   useEffect(() => {
     refreshUserData();

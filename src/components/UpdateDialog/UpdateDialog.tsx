@@ -19,11 +19,11 @@ export default function UpdateDialog({
     e.preventDefault();
     try {
       const subscriptionDays = subDays.length > 0 ? subDays : undefined;
-
+      const newPassword = password !== "" ? password : undefined;
       scope === "user" &&
         (await api.post("/admin/user/update", {
           username,
-          password,
+          password: newPassword,
           subscriptionDays
         }));
       scope === "admin" &&
